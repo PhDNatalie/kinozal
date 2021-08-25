@@ -2,8 +2,9 @@
 @use "mixins" as *;
 
 section {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+
+  overflow: hidden;
 }
 
 .main {
@@ -21,15 +22,15 @@ section {
 .new-films,
 .top-week {
   &-row {
-    margin-left: -$gap-sm;
     margin-right: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
 
   &-item {
-    padding-left: $gap-sm;
-    padding-right: $gap-sm;
     margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
 
     &__thumbnail {
       margin-bottom: 0;
@@ -38,10 +39,13 @@ section {
     &__title {
       display: block;
       overflow: hidden;
+
       margin: 0;
+
+      text-align: center;
       white-space: nowrap;
       text-overflow: ellipsis;
-      text-align: center;
+
       font-size: 1rem;
       font-weight: bold;
     }
@@ -54,13 +58,13 @@ section {
 
 .film-news {
   &-item {
-
     &__text {
       text-align: justify;
     }
 
     &__button {
       float: right;
+
       margin-bottom: $gap * 2;
     }
   }

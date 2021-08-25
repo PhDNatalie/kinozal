@@ -6,28 +6,32 @@
 }
 
 .vertical-slider {
-  border-radius: 4px;
   overflow: hidden;
+
+  border-radius: 4px;
 
   &__image {
     width: 100%;
   }
 }
 
-.user-login{
+.user-login {
   position: relative;
-  
+
   &__tabs {
     position: absolute;
     top: 0;
     right: $gap-md;
-    border: none;
+
     margin-right: -5px;
+
+    border: none;
 
     a {
       padding: 14px 5px 12px !important;
-      border: none !important;
+
       color: $color-gray;
+      border: none !important;
       background-color: transparent !important;
     }
 
@@ -42,6 +46,7 @@ $image-size-with-padding: $image-size + $gap-md;
 
 .site-news-item {
   position: relative;
+
   clear: both;
 
   &:not(:last-child) {
@@ -53,25 +58,28 @@ $image-size-with-padding: $image-size + $gap-md;
       right: 0;
       bottom: -4px;
 
-      height: 1px;
       width: calc(100% - #{$image-size-with-padding});
+      height: 1px;
+
       content: "";
+
       background-color: $color-gray;
     }
   }
 
-&:hover {
-  a {
-    color: $color-accent;
+  &:hover {
+    a {
+      color: $color-accent;
+    }
+    .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
   }
-  .thumbnail {
-    background-color: $color-accent;
-    border-color: $color-accent;
-  }
-}
 
   &__thumbnail {
     float: left;
+
     width: $image-size;
     margin: 0 $gap-md $gap-md 0;
   }
@@ -86,16 +94,17 @@ $image-size-with-padding: $image-size + $gap-md;
   }
   &__date {
     text-align: right;
-    font-size: 0.8rem;
+
     color: $color-gray-dark;
+
+    font-size: 0.8rem;
   }
 }
 
 .top-films {
-
   &__body {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   &__list {
@@ -103,28 +112,28 @@ $image-size-with-padding: $image-size + $gap-md;
   }
 
   &__item {
-    margin-left: -1px;
     margin-right: -1px;
+    margin-left: -1px;
     padding-right: 55px;
-    
-    background-color: transparent;
+
     color: $color-primary !important;
+    background-color: transparent;
 
     &:first-child {
-      border-radius: 0;
       border-top: none;
+      border-radius: 0;
     }
 
     &:last-child {
-      border-radius: 0;
       border-bottom: none;
+      border-radius: 0;
     }
 
     &:hover,
     &:focus {
-      background-color: $color-accent !important;
       color: $color-white !important;
       border-color: $color-accent;
+      background-color: $color-accent !important;
 
       .badge {
         background-color: $color-dark;
@@ -134,7 +143,8 @@ $image-size-with-padding: $image-size + $gap-md;
   &__badge {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     right: $gap;
+
+    transform: translateY(-50%);
   }
 }
