@@ -4,6 +4,10 @@
 .film-info {
     font-size: 1.2em;
 
+    &__wrapper {
+      white-space: nowrap;
+    }
+
     &__wrapper:not(:last-of-type) {
         margin-right: 15px;
     }
